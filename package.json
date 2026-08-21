@@ -1,0 +1,34 @@
+{
+  "name": "finengine-calculator",
+  "version": "1.0.0",
+  "description": "Verified reducing-balance EMI loan calculator powered by FinEngine. Zero float-drift and native BDT/South Asian lakh-crore precision.",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js"
+  },
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "finengine",
+    "emi-calculator",
+    "loan-amortization",
+    "bdt",
+    "lakh-crore",
+    "zero-drift",
+    "fintech",
+    "cfsbr"
+  ],
+  "author": "Md Golam Mubasshir Rafi <rafi@gmrafi.com> (https://gmrafi.com.bd)",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@wordpress/scripts": "^27.0.0"
+  },
+  "dependencies": {
+    "@finengine/core": "^0.1.0",
+    "@finengine/math": "^0.1.0"
+  }
+}

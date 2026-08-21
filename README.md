@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 3/150: chore: add GNU General Public License v2.0
+> In progress commit 4/150: build: initialize package.json for WordPress plugin
 
 Verified reducing-balance loan & EMI calculator for WordPress.
