@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 5/150: build: configure scripts for @wordpress/scripts toolchain
+> In progress commit 6/150: docs: add contributing guidelines
 
 Verified reducing-balance loan & EMI calculator for WordPress.
