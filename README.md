@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 9/150: feat(core): scaffold main plugin entry point finengine-calculator.php
+> In progress commit 10/150: feat(core): add ABSPATH security guard check
 
 Verified reducing-balance loan & EMI calculator for WordPress.
