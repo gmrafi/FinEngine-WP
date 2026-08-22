@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 7/150: docs: add code of conduct
+> In progress commit 8/150: docs: add security vulnerability policy
 
 Verified reducing-balance loan & EMI calculator for WordPress.
