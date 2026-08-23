@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 12/150: feat(core): define FINENGINE_PATH constant
+> In progress commit 13/150: feat(core): define FINENGINE_URL constant
 
 Verified reducing-balance loan & EMI calculator for WordPress.
