@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 13/150: feat(core): define FINENGINE_URL constant
+> In progress commit 14/150: feat(core): add text domain registration for i18n
 
 Verified reducing-balance loan & EMI calculator for WordPress.
