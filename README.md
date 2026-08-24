@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 15/150: feat(math): create math engine adapter module structure
+> In progress commit 16/150: feat(math): add basic monthly compounding rate helper
 
 Verified reducing-balance loan & EMI calculator for WordPress.
