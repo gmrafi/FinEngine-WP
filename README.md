@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 25/150: feat(math): add schedule generator returning monthly breakdown
+> In progress commit 26/150: feat(math): calculate cumulative total interest accurately
 
 Verified reducing-balance loan & EMI calculator for WordPress.
