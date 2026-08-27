@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 26/150: feat(math): calculate cumulative total interest accurately
+> In progress commit 27/150: feat(math): calculate total payable amount
 
 Verified reducing-balance loan & EMI calculator for WordPress.
