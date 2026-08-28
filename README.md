@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 30/150: feat(format): create South Asian numbering system formatter
+> In progress commit 31/150: feat(format): add Lakh grouping logic (first 3 digits then every 2)
 
 Verified reducing-balance loan & EMI calculator for WordPress.
