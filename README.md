@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 40/150: test(format): test fractional Poisha rounding to 2 decimals
+> In progress commit 41/150: refactor(format): clean up regular expression in Lakh/Crore formatter
 
 Verified reducing-balance loan & EMI calculator for WordPress.
