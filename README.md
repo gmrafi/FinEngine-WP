@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 43/150: feat(settings): register options page under WordPress Settings menu
+> In progress commit 44/150: feat(settings): add manage_options capability check for security
 
 Verified reducing-balance loan & EMI calculator for WordPress.
