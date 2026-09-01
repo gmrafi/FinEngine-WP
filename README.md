@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 41/150: refactor(format): clean up regular expression in Lakh/Crore formatter
+> In progress commit 42/150: feat(settings): scaffold FinEngine_Settings class
 
 Verified reducing-balance loan & EMI calculator for WordPress.
