@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 47/150: feat(settings): sanitize currency setting with sanitize_text_field
+> In progress commit 48/150: feat(settings): add finengine_default_principal option
 
 Verified reducing-balance loan & EMI calculator for WordPress.
