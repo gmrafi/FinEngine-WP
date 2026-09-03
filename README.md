@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 50/150: feat(settings): add finengine_default_rate option
+> In progress commit 51/150: feat(settings): sanitize default rate with floatval
 
 Verified reducing-balance loan & EMI calculator for WordPress.
