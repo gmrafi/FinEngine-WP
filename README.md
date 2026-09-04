@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 53/150: feat(settings): sanitize default tenure with absint
+> In progress commit 54/150: feat(settings): render main settings section description
 
 Verified reducing-balance loan & EMI calculator for WordPress.
