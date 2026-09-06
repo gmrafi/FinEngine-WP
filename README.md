@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 61/150: feat(shortcode): register finengine_calculator shortcode handler
+> In progress commit 62/150: feat(shortcode): register frontend runtime script handle
 
 Verified reducing-balance loan & EMI calculator for WordPress.
