@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 64/150: feat(shortcode): read index.asset.php dependencies dynamically
+> In progress commit 65/150: feat(shortcode): enqueue assets only when shortcode is rendered
 
 Verified reducing-balance loan & EMI calculator for WordPress.
