@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 68/150: feat(shortcode): sanitize currency attribute with esc_attr
+> In progress commit 69/150: feat(shortcode): cast principal to floatval
 
 Verified reducing-balance loan & EMI calculator for WordPress.
