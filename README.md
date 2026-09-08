@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 66/150: feat(shortcode): parse shortcode attributes with shortcode_atts
+> In progress commit 67/150: feat(shortcode): fallback to global admin settings if attributes omitted
 
 Verified reducing-balance loan & EMI calculator for WordPress.
