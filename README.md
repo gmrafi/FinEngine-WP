@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 65/150: feat(shortcode): enqueue assets only when shortcode is rendered
+> In progress commit 66/150: feat(shortcode): parse shortcode attributes with shortcode_atts
 
 Verified reducing-balance loan & EMI calculator for WordPress.
