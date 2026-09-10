@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 74/150: feat(shortcode): add card header and badge element
+> In progress commit 75/150: feat(shortcode): build two-column grid structure
 
 Verified reducing-balance loan & EMI calculator for WordPress.
