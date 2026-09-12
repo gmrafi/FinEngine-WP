@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 79/150: feat(shortcode): add range slider min/max helper labels
+> In progress commit 80/150: feat(shortcode): add monthly payment KPI hero card
 
 Verified reducing-balance loan & EMI calculator for WordPress.
