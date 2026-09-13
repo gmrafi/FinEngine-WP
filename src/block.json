@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "finengine/loan-calculator",
+  "version": "1.0.0",
+  "title": "FinEngine Loan Calculator",
+  "category": "widgets",
+  "icon": "calculator",
+  "description": "Deterministic reducing-balance loan & EMI calculator with zero drift and Lakh/Crore currency support.",
+  "keywords": ["loan", "emi", "calculator", "finengine", "amortization"],
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "FinEngine Loan & EMI Calculator"
+    },
+    "currency": {
+      "type": "string",
+      "default": "BDT"
+    },
+    "defaultPrincipal": {
+      "type": "number",
+      "default": 500000
+    },
+    "defaultRate": {
+      "type": "number",
+      "default": 12.0
+    },
+    "defaultTenure": {
+      "type": "number",
+      "default": 36
+    },
+    "theme": {
+      "type": "string",
+      "default": "light"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
