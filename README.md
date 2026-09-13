@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 83/150: feat(shortcode): add terminal balance zero-drift validation banner
+> In progress commit 84/150: feat(shortcode): add client-side privacy disclosure footer note
 
 Verified reducing-balance loan & EMI calculator for WordPress.
