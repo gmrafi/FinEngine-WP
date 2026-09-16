@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 93/150: feat(block): delegate server-side rendering to FinEngine_Shortcode
+> In progress commit 94/150: feat(block): scaffold React edit.js component using useBlockProps
 
 Verified reducing-balance loan & EMI calculator for WordPress.
