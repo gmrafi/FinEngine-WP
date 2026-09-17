@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 98/150: feat(block): add SelectControl for currency configuration
+> In progress commit 99/150: feat(block): add RangeControl for default principal slider
 
 Verified reducing-balance loan & EMI calculator for WordPress.
