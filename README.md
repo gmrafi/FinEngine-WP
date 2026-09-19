@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 103/150: feat(block): add zero-drift indicator note in editor preview
+> In progress commit 104/150: feat(block): create save.js returning null for dynamic block rendering
 
 Verified reducing-balance loan & EMI calculator for WordPress.
