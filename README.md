@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 107/150: feat(frontend): implement DOM selector targeting .finengine-calculator-wrapper
+> In progress commit 108/150: feat(frontend): prevent double initialization with dataset flag
 
 Verified reducing-balance loan & EMI calculator for WordPress.
