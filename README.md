@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 115/150: feat(frontend): update EMI display with formatLakhCrore
+> In progress commit 116/150: feat(frontend): update principal display with formatLakhCrore
 
 Verified reducing-balance loan & EMI calculator for WordPress.
