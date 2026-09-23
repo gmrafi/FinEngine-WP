@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 119/150: feat(frontend): update terminal balance display with zero drift confirmation
+> In progress commit 120/150: feat(frontend): trigger initial calculation on page load
 
 Verified reducing-balance loan & EMI calculator for WordPress.
