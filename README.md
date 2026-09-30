@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 142/150: docs: document installation, FAQ, and changelog in readme.txt
+> In progress commit 143/150: docs: add gmrafi contributor attribution for WordPress.org
 
 Verified reducing-balance loan & EMI calculator for WordPress.
