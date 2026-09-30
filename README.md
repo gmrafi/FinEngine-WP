@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 143/150: docs: add gmrafi contributor attribution for WordPress.org
+> In progress commit 144/150: brand: add vector logo-mark.svg in root and assets
 
 Verified reducing-balance loan & EMI calculator for WordPress.
