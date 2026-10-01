@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 146/150: docs: add CITATION.cff with CFSBR DOI 10.67226/cfsbr.fe.2026.001.v1
+> In progress commit 147/150: ci: add GitHub Actions CI workflow for Node 20 build verification
 
 Verified reducing-balance loan & EMI calculator for WordPress.

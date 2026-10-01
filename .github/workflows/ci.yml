@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build & Verify WordPress Plugin
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Block and Assets
+        run: npm run build
+
+      - name: Verify Build Artifacts
+        run: |
+          test -f build/index.js
+          test -f build/style-index.css
+          test -f build/block.json
+          test -f build/index.asset.php
+          echo "All WordPress build artifacts verified successfully."
