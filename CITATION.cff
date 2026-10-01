@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software or methodology, please cite it as below."
+authors:
+  - family-names: "Rafi"
+    given-names: "Md Golam Mubasshir"
+    affiliation: "Centre for Fintech and Strategic Business Research (CFSBR)"
+title: "FinEngine-WP: Deterministic Loan & EMI Calculator for WordPress"
+version: 1.0.0
+doi: 10.67226/cfsbr.fe.2026.001.v1
+date-released: 2026-10-03
+url: "https://finengine.js.org/"
+repository-code: "https://github.com/gmrafi/FinEngine-WP"
