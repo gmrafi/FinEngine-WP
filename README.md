@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 144/150: brand: add vector logo-mark.svg in root and assets
+> In progress commit 145/150: brand: add high-resolution logo-mark.png
 
 Verified reducing-balance loan & EMI calculator for WordPress.
