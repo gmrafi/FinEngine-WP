@@ -1,5 +1,5 @@
 # FinEngine-WP
 
-> In progress commit 147/150: ci: add GitHub Actions CI workflow for Node 20 build verification
+> In progress commit 148/150: build: compile block and frontend assets using @wordpress/scripts
 
 Verified reducing-balance loan & EMI calculator for WordPress.
