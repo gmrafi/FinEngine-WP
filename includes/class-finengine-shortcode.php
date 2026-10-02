@@ -168,8 +168,7 @@ class FinEngine_Shortcode {
 
                 <div class="fe-footer-note">
                     <small>
-                        <?php esc_html_e( 'Powered by FinEngine Open Financial Standards · 100% Client-Side Computation · Zero Server Tracking', 'finengine-calculator' ); ?>
-                    </small>
+                        <?php esc_html_e( 'Actuarial Precision - 100% Client-Side Computation - Zero Server Tracking</small>
                 </div>
             </div>
         </div>
