@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       FinEngine - Deterministic Loan & EMI Calculator
+ * Plugin Name:       FinEngine Calculator
  * Plugin URI:        https://finengine.js.org/
  * Description:       Verified reducing-balance EMI loan calculator powered by FinEngine. Zero float-drift and native BDT/South Asian lakh-crore precision.
  * Version:           1.0.0

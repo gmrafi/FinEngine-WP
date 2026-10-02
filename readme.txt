@@ -1,8 +1,8 @@
-=== FinEngine - Deterministic Loan & EMI Calculator ===
+=== FinEngine Calculator ===
 Contributors: gmrafi
 Tags: emi calculator, loan calculator, amortization, bdt, zero-drift, fintech, banking
 Requires at least: 6.0
-Tested up to: 6.7
+Tested up to: 7.1
 Requires PHP: 7.4
 Stable tag: 1.0.0
 License: GPLv2 or later
@@ -20,7 +20,7 @@ Key Features:
 * **Zero Float Drift Guarantee:** Actuarial reducing-balance calculations with strict integer sub-unit Poisha scaling.
 * **Terminal Reconciliation Rule:** Mathematical boundary enforcement guaranteeing the closing principal balance liquidates cleanly to exactly 0.00.
 * **South Asian Numbering Conventions:** Native support for Lakh and Crore formatting (`2,45,87,500.00`) for Bangladeshi Taka (BDT) and Indian Rupee (INR).
-* **Full-Site Editing (Gutenberg) Block:** Modern WordPress 6.0+ block with live inspector controls.
+* **Full-Site Editing (Gutenberg) Block:** Modern WordPress block with live inspector controls.
 * **Universal Shortcode:** Embed anywhere with `[finengine_calculator]` (compatible with Elementor, Divi, Beaver Builder, and Classic Editor).
 * **100% Client-Side Privacy:** Zero server tracking, zero AJAX calls, and no cookies. Customer loan details never leave the browser.
 * **Academic Backing:** Developed by Md Golam Mubasshir Rafi in accordance with CFSBR (Centre for Fintech and Strategic Business Research) computational working papers and archived on CERN Zenodo.
