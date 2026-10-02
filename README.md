@@ -17,7 +17,7 @@
 
 ---
 
-## 💡 Why FinEngine for WordPress?
+## Why FinEngine for WordPress?
 
 Modern web financial applications increasingly offload real-time calculations to client-side runtimes. However, standard ECMAScript engines rely on IEEE-754 double-precision binary floating-point arithmetic (binary64), introducing representation drift in everyday decimal arithmetic:
 
@@ -31,13 +31,13 @@ In multi-year financial loan amortization schedules, this drift compounds across
 1. **Zero Float Drift Guarantee:** Actuarial reducing-balance calculations with strict integer sub-unit Poisha scaling (1 BDT = 100 Poisha).
 2. **Terminal Reconciliation Rule:** Boundary enforcement guaranteeing closing balance liquidates identically to zero ($B_n \equiv 0.00$).
 3. **South Asian Numbering Conventions:** Built-in Lakh and Crore grouping for Bangladeshi Taka (BDT) and Indian Rupee (INR).
-4. **Full-Site Editing (Gutenberg) Block:** Native WordPress 6.0+ block with live Inspector Controls.
+4. **Full-Site Editing (Gutenberg) Block:** Native WordPress block with live Inspector Controls.
 5. **Universal Shortcode:** One-line drop-in `[finengine_calculator]` compatible with Elementor, Divi, Beaver Builder, and Classic Editor.
 6. **100% Client-Side Privacy:** Zero server tracking, zero AJAX calls, and no cookies. Customer financial numbers never leave the user's browser.
 
 ---
 
-## 🌐 FinEngine Ecosystem Parity
+## FinEngine Ecosystem Parity
 
 FinEngine maintains identical mathematical parity between client-side JavaScript runtimes, Python scientific backends, and WordPress interfaces:
 
@@ -51,7 +51,7 @@ FinEngine maintains identical mathematical parity between client-side JavaScript
 
 ---
 
-## 🚀 Installation & Usage
+## Installation & Usage
 
 ### 1. Gutenberg Block (Recommended)
 1. In the WordPress Block Editor, search for **"FinEngine Loan Calculator"**.
@@ -74,7 +74,7 @@ Add the shortcode anywhere in your content, widgets, or page builder:
 
 ---
 
-## 🛠️ Development & Build Pipeline
+## Development & Build Pipeline
 
 This plugin uses the official WordPress build toolchain `@wordpress/scripts`:
 
@@ -95,7 +95,7 @@ npm run build
 
 ---
 
-## 🏛️ Academic Backing & Citation
+## Academic Backing & Citation
 
 FinEngine is published as an open computational methodology standard by the **Centre for Fintech and Strategic Business Research (CFSBR)**.
 
@@ -125,17 +125,21 @@ FinEngine is published as an open computational methodology standard by the **Ce
 
 ---
 
-## 👤 Author & Maintainers
+## Institutional Maintainer, Authors & Governance
 
-- **Author:** [Md Golam Mubasshir Rafi](https://gmrafi.com.bd/)
-- **Organization:** Centre for Fintech and Strategic Business Research (CFSBR)
-- **WordPress Profile:** [@gmrafi](https://profiles.wordpress.org/gmrafi/)
-- **GitHub:** [@gmrafi](https://github.com/gmrafi)
-- **Contact:** rafi@gmrafi.com.bd
+FinEngine-WP is an official open computational initiative developed and maintained under the institutional governance of:
+
+- **Institutional Maintainer & Research Lab:** [Centre for Fintech and Strategic Business Research (CFSBR)](https://finengine.js.org/)
+- **Lead Author & Software Architect:** [Md Golam Mubasshir Rafi](https://gmrafi.com.bd/)
+- **WordPress Directory Contributor:** [@gmrafi](https://profiles.wordpress.org/gmrafi/)
+- **GitHub Repository:** [@gmrafi](https://github.com/gmrafi)
+- **Official Contact:** rafi@gmrafi.com.bd
+
+The project is governed collaboratively by CFSBR Lab and the open-source community to ensure rigorous financial calculation accuracy, zero floating-point drift, and South Asian localization standards across WordPress environments.
 
 ---
 
-## 📄 License
+## License
 
 - **Software Code:** Licensed under the [GNU General Public License v2.0 or later (GPL-2.0-or-later)](LICENSE) in full compliance with WordPress.org guidelines.
 - **Documentation & Research Methodology:** [Creative Commons Attribution 4.0 International (CC-BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
