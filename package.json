@@ -22,7 +22,7 @@
     "fintech",
     "cfsbr"
   ],
-  "author": "Md Golam Mubasshir Rafi <rafi@gmrafi.com> (https://gmrafi.com.bd)",
+  "author": "Md Golam Mubasshir Rafi <rafi@gmrafi.com.bd> (https://gmrafi.com.bd)",
   "license": "GPL-2.0-or-later",
   "devDependencies": {
     "@wordpress/scripts": "^27.0.0"

@@ -131,7 +131,7 @@ FinEngine is published as an open computational methodology standard by the **Ce
 - **Organization:** Centre for Fintech and Strategic Business Research (CFSBR)
 - **WordPress Profile:** [@gmrafi](https://profiles.wordpress.org/gmrafi/)
 - **GitHub:** [@gmrafi](https://github.com/gmrafi)
-- **Contact:** rafi@gmrafi.com
+- **Contact:** rafi@gmrafi.com.bd
 
 ---
 
