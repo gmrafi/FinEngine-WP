@@ -27,11 +27,24 @@ require_once FINENGINE_PATH . 'includes/class-finengine-shortcode.php';
 require_once FINENGINE_PATH . 'includes/class-finengine-block.php';
 require_once FINENGINE_PATH . 'includes/class-finengine-settings.php';
 
-// Initialize plugin components
+// Initialize text domain and plugin components
 add_action( 'plugins_loaded', function() {
+    load_plugin_textdomain(
+        'finengine-calculator',
+        false,
+        dirname( plugin_basename( __FILE__ ) ) . '/languages'
+    );
+
     new FinEngine_Shortcode();
     new FinEngine_Block();
     new FinEngine_Settings();
+} );
+
+// Add quick settings action link on plugins.php
+add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), function( $links ) {
+    $settings_link = '<a href="' . esc_url( admin_url( 'options-general.php?page=finengine-calculator' ) ) . '">' . esc_html__( 'Settings', 'finengine-calculator' ) . '</a>';
+    array_unshift( $links, $settings_link );
+    return $links;
 } );
 
 // Register activation hooks with sensible defaults
@@ -40,12 +53,12 @@ register_activation_hook( __FILE__, function() {
         update_option( 'finengine_default_currency', 'BDT' );
     }
     if ( false === get_option( 'finengine_default_principal' ) ) {
-        update_option( 'finengine_default_principal', '500000' );
+        update_option( 'finengine_default_principal', 500000 );
     }
     if ( false === get_option( 'finengine_default_rate' ) ) {
-        update_option( 'finengine_default_rate', '12.0' );
+        update_option( 'finengine_default_rate', 12.0 );
     }
     if ( false === get_option( 'finengine_default_tenure' ) ) {
-        update_option( 'finengine_default_tenure', '36' );
+        update_option( 'finengine_default_tenure', 36 );
     }
 } );

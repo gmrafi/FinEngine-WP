@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FinEngine - Deterministic Loan & EMI Calculator 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/finengine-calculator\n"
+"POT-Creation-Date: 2026-10-03T02:40:00+06:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Md Golam Mubasshir Rafi <rafi@gmrafi.com.bd>\n"
+"Language-Team: English <support@gmrafi.com.bd>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: FinEngine i18n Tool\n"
+
+msgid "FinEngine - Deterministic Loan & EMI Calculator"
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "Default Currency"
+msgstr ""
+
+msgid "Default Loan Amount"
+msgstr ""
+
+msgid "Default Annual Interest Rate (%)"
+msgstr ""
+
+msgid "Default Tenure (Months)"
+msgstr ""
+
+msgid "Loan Amount"
+msgstr ""
+
+msgid "Annual Interest Rate (%)"
+msgstr ""
+
+msgid "Tenure Duration"
+msgstr ""
+
+msgid "Monthly Payment (EMI)"
+msgstr ""
+
+msgid "Total Principal"
+msgstr ""
+
+msgid "Total Interest"
+msgstr ""
+
+msgid "Total Payable Amount"
+msgstr ""
+
+msgid "Terminal Balance:"
+msgstr ""
+
+msgid "Zero Float Drift Guaranteed"
+msgstr ""

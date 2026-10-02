@@ -57,12 +57,36 @@ class FinEngine_Settings {
             'finengine-calculator',
             'finengine_main_section'
         );
+
+        add_settings_field(
+            'finengine_default_principal',
+            __( 'Default Loan Amount', 'finengine-calculator' ),
+            [ $this, 'render_principal_field' ],
+            'finengine-calculator',
+            'finengine_main_section'
+        );
+
+        add_settings_field(
+            'finengine_default_rate',
+            __( 'Default Annual Interest Rate (%)', 'finengine-calculator' ),
+            [ $this, 'render_rate_field' ],
+            'finengine-calculator',
+            'finengine_main_section'
+        );
+
+        add_settings_field(
+            'finengine_default_tenure',
+            __( 'Default Tenure (Months)', 'finengine-calculator' ),
+            [ $this, 'render_tenure_field' ],
+            'finengine-calculator',
+            'finengine_main_section'
+        );
     }
 
     public function render_currency_field() {
         $currency = get_option( 'finengine_default_currency', 'BDT' );
         ?>
-        <select name="finengine_default_currency">
+        <select name="finengine_default_currency" id="finengine_default_currency">
             <option value="BDT" <?php selected( $currency, 'BDT' ); ?>>BDT (Bangladeshi Taka - Lakh/Crore)</option>
             <option value="INR" <?php selected( $currency, 'INR' ); ?>>INR (Indian Rupee - Lakh/Crore)</option>
             <option value="USD" <?php selected( $currency, 'USD' ); ?>>USD (US Dollar - Million/Billion)</option>
@@ -75,9 +99,33 @@ class FinEngine_Settings {
         <?php
     }
 
+    public function render_principal_field() {
+        $principal = get_option( 'finengine_default_principal', 500000 );
+        ?>
+        <input type="number" name="finengine_default_principal" id="finengine_default_principal" value="<?php echo esc_attr( $principal ); ?>" min="1000" step="5000" class="regular-text">
+        <p class="description"><?php esc_html_e( 'Initial loan amount presented when calculator loads.', 'finengine-calculator' ); ?></p>
+        <?php
+    }
+
+    public function render_rate_field() {
+        $rate = get_option( 'finengine_default_rate', 12.0 );
+        ?>
+        <input type="number" name="finengine_default_rate" id="finengine_default_rate" value="<?php echo esc_attr( $rate ); ?>" min="0.1" max="50" step="0.1" class="small-text"> %
+        <p class="description"><?php esc_html_e( 'Default annual interest percentage.', 'finengine-calculator' ); ?></p>
+        <?php
+    }
+
+    public function render_tenure_field() {
+        $tenure = get_option( 'finengine_default_tenure', 36 );
+        ?>
+        <input type="number" name="finengine_default_tenure" id="finengine_default_tenure" value="<?php echo esc_attr( $tenure ); ?>" min="1" max="480" step="1" class="small-text"> <?php esc_html_e( 'Months', 'finengine-calculator' ); ?>
+        <p class="description"><?php esc_html_e( 'Default repayment duration in months.', 'finengine-calculator' ); ?></p>
+        <?php
+    }
+
     public function render_settings_page() {
         if ( ! current_user_can( 'manage_options' ) ) {
-            return;
+            wp_die( esc_html__( 'You do not have sufficient permissions to access this page.', 'finengine-calculator' ) );
         }
         ?>
         <div class="wrap">
@@ -90,7 +138,7 @@ class FinEngine_Settings {
                 ?>
             </form>
             <hr>
-            <h3><?php esc_html_e( 'Shortcode Usage', 'finengine-calculator' ); ?></h3>
+            <h2><?php esc_html_e( 'Shortcode Usage Guide', 'finengine-calculator' ); ?></h2>
             <p><?php esc_html_e( 'Insert the calculator into any page, post, or widget with:', 'finengine-calculator' ); ?></p>
             <code>[finengine_calculator currency="BDT" default_principal="500000" default_rate="12.0" default_tenure="36"]</code>
         </div>
