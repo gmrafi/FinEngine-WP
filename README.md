@@ -2,7 +2,9 @@
   <img src="logo-mark.svg" alt="FinEngine Logo" width="120" height="120" />
 </p>
 
-# FinEngine WordPress Plugin: Deterministic Loan & EMI Calculator
+# FinEngine Calculator
+
+### Deterministic Loan & EMI Calculator for WordPress
 
 > **Verified reducing-balance EMI loan calculator powered by FinEngine.**  
 > Eliminates IEEE-754 floating-point drift and brings native South Asian Lakh/Crore numbering (Bangladeshi Taka · Poisha) directly into WordPress.
@@ -11,7 +13,7 @@
 [![WordPress Compatibility](https://img.shields.io/badge/WordPress-6.0%2B-21759b.svg?logo=wordpress&logoColor=white)](https://wordpress.org/)
 [![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-777bb4.svg?logo=php&logoColor=white)](https://www.php.net/)
 [![Zero Float Drift](https://img.shields.io/badge/Precision-Zero%20Drift%20(B_n%20%3D%3D%3D%200.00)-059669.svg)](https://finengine.js.org/)
-[![Academic Lab](https://img.shields.io/badge/Research-CFSBR%20Lab-0f766e.svg)](https://finengine.js.org/methodology/)
+[![Research](https://img.shields.io/badge/Research-CFSBR-0f766e.svg)](https://finengine.js.org/methodology/)
 [![DOI](https://img.shields.io/badge/DOI-10.67226%2Fcfsbr.fe.2026.001.v1-0284c7.svg)](https://doi.org/10.67226/cfsbr.fe.2026.001.v1)
 [![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.22769502-blue.svg)](https://doi.org/10.5281/zenodo.22769502)
 
@@ -27,7 +29,7 @@ Modern web financial applications increasingly offload real-time calculations to
 
 In multi-year financial loan amortization schedules, this drift compounds across monthly periods, causing final closing balances to fail to liquidate cleanly to zero ($B_n \neq 0.00$). Furthermore, existing WordPress calculators lack native South Asian Lakh and Crore numbering conventions (`2,45,87,500.00`).
 
-**FinEngine Loan Calculator** resolves this by delivering:
+**FinEngine Calculator** resolves this by delivering:
 1. **Zero Float Drift Guarantee:** Actuarial reducing-balance calculations with strict integer sub-unit Poisha scaling (1 BDT = 100 Poisha).
 2. **Terminal Reconciliation Rule:** Boundary enforcement guaranteeing closing balance liquidates identically to zero ($B_n \equiv 0.00$).
 3. **South Asian Numbering Conventions:** Built-in Lakh and Crore grouping for Bangladeshi Taka (BDT) and Indian Rupee (INR).
@@ -125,17 +127,17 @@ FinEngine is published as an open computational methodology standard by the **Ce
 
 ---
 
-## Institutional Maintainer, Authors & Governance
+## Institutional Governance, Authors & Maintenance
 
-FinEngine-WP is an official open computational initiative developed and maintained under the institutional governance of:
+FinEngine Calculator is an official open computational initiative developed and maintained under the institutional governance of:
 
-- **Institutional Maintainer & Research Lab:** [Centre for Fintech and Strategic Business Research (CFSBR)](https://finengine.js.org/)
+- **Institutional Governance:** [Centre for Fintech and Strategic Business Research (CFSBR)](https://finengine.js.org/)
 - **Lead Author & Software Architect:** [Md Golam Mubasshir Rafi](https://gmrafi.com.bd/)
 - **WordPress Directory Contributor:** [@gmrafi](https://profiles.wordpress.org/gmrafi/)
 - **GitHub Repository:** [@gmrafi](https://github.com/gmrafi)
 - **Official Contact:** rafi@gmrafi.com.bd
 
-The project is governed collaboratively by CFSBR Lab and the open-source community to ensure rigorous financial calculation accuracy, zero floating-point drift, and South Asian localization standards across WordPress environments.
+The project is governed collaboratively by CFSBR and the open-source community to ensure rigorous financial calculation accuracy, zero floating-point drift, and South Asian localization standards across WordPress environments.
 
 ---
 
