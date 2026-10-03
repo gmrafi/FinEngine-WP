@@ -17,10 +17,8 @@
     {
       "step": "installPlugin",
       "pluginData": {
-        "resource": "git:directory",
-        "url": "https://github.com/gmrafi/FinEngine-WP.git",
-        "ref": "main",
-        "path": "/"
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/gmrafi/FinEngine-WP/main/finengine-calculator.zip"
       },
       "options": {
         "activate": true

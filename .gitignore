@@ -6,5 +6,6 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 *.zip
+!finengine-calculator.zip
 .vscode/
 .idea/
