@@ -129,13 +129,14 @@ FinEngine is published as an open computational methodology standard by the **Ce
 
 ## Institutional Governance, Authors & Maintenance
 
-FinEngine Calculator is an official open computational initiative developed and maintained under the institutional governance of:
+This is an initiative of the Centre for Fintech and Strategic Business Research (CFSBR).
 
-- **Institutional Governance:** [Centre for Fintech and Strategic Business Research (CFSBR)](https://finengine.js.org/)
-- **Lead Author & Software Architect:** [Md Golam Mubasshir Rafi](https://gmrafi.com.bd/)
-- **WordPress Directory Contributor:** [@gmrafi](https://profiles.wordpress.org/gmrafi/)
-- **GitHub Repository:** [@gmrafi](https://github.com/gmrafi)
-- **Official Contact:** rafi@gmrafi.com.bd
+- **Institution:** [Centre for Fintech and Strategic Business Research (CFSBR)](https://finengine.js.org/)
+- **Author & Architect:** [Md Golam Mubasshir Rafi](https://gmrafi.com.bd/)
+- **Personal Website:** [https://gmrafi.com.bd](https://gmrafi.com.bd/)
+- **WordPress Profile:** [https://profiles.wordpress.org/gmrafi](https://profiles.wordpress.org/gmrafi/)
+- **GitHub Profile:** [https://github.com/gmrafi](https://github.com/gmrafi)
+- **Official Contact:** [rafi@gmrafi.com.bd](mailto:rafi@gmrafi.com.bd)
 
 The project is governed collaboratively by CFSBR and the open-source community to ensure rigorous financial calculation accuracy, zero floating-point drift, and South Asian localization standards across WordPress environments.
 
