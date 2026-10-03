@@ -16,6 +16,7 @@
 [![Research](https://img.shields.io/badge/Research-CFSBR-0f766e.svg)](https://finengine.js.org/methodology/)
 [![DOI](https://img.shields.io/badge/DOI-10.67226%2Fcfsbr.fe.2026.001.v1-0284c7.svg)](https://doi.org/10.67226/cfsbr.fe.2026.001.v1)
 [![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.22769502-blue.svg)](https://doi.org/10.5281/zenodo.22769502)
+[![Playground Demo](https://img.shields.io/badge/Live_Demo-WordPress_Playground-3858e9.svg?logo=wordpress&logoColor=white)](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/gmrafi/FinEngine-WP/main/blueprint.json)
 
 ---
 
@@ -55,11 +56,18 @@ FinEngine maintains identical mathematical parity between client-side JavaScript
 
 ## Installation & Usage
 
-### 1. Gutenberg Block (Recommended)
+### 1. Instant 1-Click Demo (WordPress Playground)
+Test FinEngine Calculator in a live, fully functional WordPress environment directly inside your web browser without installing any software:
+
+- **[Launch Live WordPress Playground Demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/gmrafi/FinEngine-WP/main/blueprint.json)**
+
+*Powered by WebAssembly (Wasm). Spins up an isolated WordPress instance and automatically opens a live demonstration page with the FinEngine Calculator pre-configured.*
+
+### 2. Gutenberg Block (Recommended)
 1. In the WordPress Block Editor, search for **"FinEngine Loan Calculator"**.
 2. Customize the default currency, principal, interest rate, and tenure directly from the sidebar settings panel.
 
-### 2. Universal Shortcode
+### 3. Universal Shortcode
 Add the shortcode anywhere in your content, widgets, or page builder:
 ```text
 [finengine_calculator currency="BDT" default_principal="500000" default_rate="12.0" default_tenure="36"]

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/finengine-demo/",
+  "preferredVersions": {
+    "php": "8.0",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "login",
+      "username": "admin",
+      "password": "password"
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "git:directory",
+        "url": "https://github.com/gmrafi/FinEngine-WP.git",
+        "ref": "main",
+        "path": "/"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once '/wordpress/wp-load.php'; wp_insert_post(array('post_title' => 'FinEngine Loan Calculator Live Demo', 'post_name' => 'finengine-demo', 'post_content' => '<!-- wp:heading --><h2>FinEngine Actuarial Loan Calculator</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Experience verified reducing-balance EMI calculations with zero floating-point drift and native Bangladeshi Taka (Lakh/Crore) sub-unit arithmetic directly in your browser:</p><!-- /wp:paragraph -->[finengine_calculator currency=\"BDT\" default_principal=\"500000\" default_rate=\"12.0\" default_tenure=\"36\"]', 'post_status' => 'publish', 'post_type' => 'page'));"
+    }
+  ]
+}
