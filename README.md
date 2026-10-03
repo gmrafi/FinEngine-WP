@@ -129,16 +129,18 @@ FinEngine is published as an open computational methodology standard by the **Ce
 
 ## Institutional Governance, Authors & Maintenance
 
-This is an initiative of the Centre for Fintech and Strategic Business Research (CFSBR).
+FinEngine Calculator is developed as an open computational research initiative under the institutional governance of the **Centre for Fintech and Strategic Business Research (CFSBR)**. Conceived and architected to eliminate IEEE-754 binary floating-point drift in client-side financial environments, the framework provides verifiable actuarial amortization schedules alongside native South Asian currency numbering standards.
 
-- **Institution:** [Centre for Fintech and Strategic Business Research (CFSBR)](https://finengine.js.org/)
+### Authorship & Leadership
+
 - **Author & Architect:** [Md Golam Mubasshir Rafi](https://gmrafi.com.bd/)
-- **Personal Website:** [https://gmrafi.com.bd](https://gmrafi.com.bd/)
+- **Institutional Governance:** [Centre for Fintech and Strategic Business Research (CFSBR)](https://finengine.js.org/)
 - **WordPress Profile:** [https://profiles.wordpress.org/gmrafi](https://profiles.wordpress.org/gmrafi/)
-- **GitHub Profile:** [https://github.com/gmrafi](https://github.com/gmrafi)
+- **Personal Website:** [https://gmrafi.com.bd](https://gmrafi.com.bd/)
+- **GitHub Repository:** [https://github.com/gmrafi/FinEngine-WP](https://github.com/gmrafi/FinEngine-WP)
 - **Official Contact:** [rafi@gmrafi.com.bd](mailto:rafi@gmrafi.com.bd)
 
-The project is governed collaboratively by CFSBR and the open-source community to ensure rigorous financial calculation accuracy, zero floating-point drift, and South Asian localization standards across WordPress environments.
+The codebase is collaboratively maintained under CFSBR stewardship alongside the international WordPress developer community.
 
 ---
 
