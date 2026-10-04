@@ -48,39 +48,51 @@ The **FinEngine-WP** ecosystem provides two interconnected solutions for banks, 
 
 ---
 
-## 1. FinEngine Calculator (Plugin)
+## 1. FinEngine Calculator (The Computational Engine)
 
-Modern web financial applications increasingly offload real-time calculations to client-side runtimes. However, standard ECMAScript engines rely on IEEE-754 double-precision binary floating-point arithmetic (binary64), introducing representation drift in everyday decimal arithmetic:
+**Role:** Actuarial Mathematics, Floating-Point Correction & Interactive Financial Computation.
+
+Standard web runtimes execute arithmetic using the IEEE-754 binary floating-point standard (binary64). In financial calculations, decimal fractions like `0.1` or `0.2` cannot be represented exactly in binary, creating silent truncation errors:
 
 ```javascript
-0.1 + 0.2 === 0.30000000000000004; // True in standard JS runtimes
+0.1 + 0.2 === 0.30000000000000004; // True in standard JavaScript runtimes
 ```
 
-In multi-year financial loan amortization schedules, this drift compounds across monthly periods, causing final closing balances to fail to liquidate cleanly to zero ($B_n \neq 0.00$). Furthermore, existing WordPress calculators lack native South Asian Lakh and Crore numbering conventions (`2,45,87,500.00`).
+In multi-year financial loan amortization schedules, compounding float drift causes monthly closing balances to fail terminal reconciliation ($B_n \neq 0.00$). Existing WordPress calculators also lack native South Asian Lakh and Crore numbering conventions (`2,45,87,500.00`).
 
-### Core Plugin Capabilities:
-1. **Zero Float Drift Guarantee:** Actuarial reducing-balance calculations with strict integer sub-unit Poisha scaling (1 BDT = 100 Poisha).
-2. **Terminal Reconciliation Rule:** Boundary enforcement guaranteeing closing balance liquidates identically to zero ($B_n \equiv 0.00$).
-3. **South Asian Numbering Conventions:** Built-in Lakh and Crore grouping for Bangladeshi Taka (BDT) and Indian Rupee (INR).
-4. **Full-Site Editing (Gutenberg) Block:** Native WordPress block with live Inspector Controls.
-5. **Universal Shortcode:** One-line drop-in `[finengine_calculator]` compatible with Elementor, Divi, Beaver Builder, and Classic Editor.
-6. **100% Client-Side Privacy:** Zero server tracking, zero AJAX calls, and no cookies. Customer financial data never leaves the user's browser.
+### What the Plugin Solves:
+- **Sub-Unit Poisha Scaling:** Executes all internal operations using integer scaling ($1\text{ BDT} = 100\text{ Poisha}$), completely eliminating binary float representation drift.
+- **Terminal Zero Balance ($B_n \equiv 0.00$):** Enforces rigorous boundary conditions so that the final installment liquidates the principal balance to exactly zero.
+- **South Asian Formatting (Lakh/Crore):** Renders currency strings adhering to standard South Asian comma grouping conventions.
+- **Universal Embed Options:** Provides a native Gutenberg block with Inspector Controls and a universal shortcode `[finengine_calculator]` compatible with all page builders.
+- **Client-Side Privacy:** Operates 100% in the user's browser without AJAX, server tracking, or database queries.
 
 ---
 
-## 2. FinEngine Fintech (Theme)
+## 2. FinEngine Fintech (The Visual Architecture & Theme)
 
-**FinEngine Fintech** is a purpose-built Full-Site Editing (FSE) block theme designed to provide modern financial institutions with clean, high-performance web interfaces.
+**Role:** Structural Layout, Site Scaffolding, Full-Site Editing & Design System.
 
-### Core Theme Capabilities:
-1. **Full-Site Editing Architecture:** Full control over global styles, color palettes, headers, and footers using `theme.json` v3.
-2. **Pre-Built Financial Block Patterns:**
-   - `finengine-fintech/hero-finance`: High-impact landing page hero section with statistics.
-   - `finengine-fintech/kpi-grid`: 3-column financial accuracy KPI metrics display.
-   - `finengine-fintech/calculator-section`: Ready-to-use live loan calculation container.
-3. **Elementor Page Builder Compatibility:** Custom full-width canvas template (`page-elementor-fullwidth.html`) for drag-and-drop page creation.
-4. **Zero-Bloat Performance:** Native system font stacks, zero external CDN requests, and ultra-clean semantic HTML5 markup.
-5. **Accessible Design Tokens:** Emerald (`#0f766e`), Slate Navy (`#0f172a`), and Cyan (`#0ea5e9`) meeting WCAG AAA contrast standards.
+While the plugin handles the mathematics, **FinEngine Fintech** provides the presentation framework, typography, and layout foundation required for professional banking and fintech web properties.
+
+### What the Theme Delivers:
+- **Full-Site Editing (FSE) Foundation:** Complete template control over headers, footers, query loops, and single page layouts powered by the modern `theme.json` v3 schema.
+- **Pre-Built Financial Block Patterns:**
+  - `finengine-fintech/hero-finance`: Hero section with financial metrics, statistics, and high-conversion call-to-actions.
+  - `finengine-fintech/kpi-grid`: 3-column KPI card grid highlighting integer precision, zero reconciliation, and local numbering.
+  - `finengine-fintech/calculator-section`: A pre-styled, responsive container pre-wired to embed live loan calculators.
+- **Elementor Canvas & Full-Width Compatibility:** Includes dedicated `page-elementor-fullwidth.html` template for drag-and-drop landing page design.
+- **Zero-Bloat Performance:** Uses native system font stacks (`-apple-system`, `Segoe UI`, `Roboto`), zero external CDN requests, and pure CSS variables.
+- **Accessible Color Architecture:** Curated Emerald (`#0f766e`), Slate Navy (`#0f172a`), and Cyan (`#0ea5e9`) meeting WCAG AAA contrast guidelines.
+
+---
+
+## 3. Cohesive Interoperability (How They Function Together)
+
+Although each component functions independently:
+1. **Standalone Plugin:** Can be installed on any WordPress theme (Astra, GeneratePress, Twenty Twenty-Four, custom themes).
+2. **Standalone Theme:** Functions as a complete FSE block theme for corporate finance sites with or without loan calculators.
+3. **Combined Ecosystem:** When used together, the theme's `calculator-section` pattern automatically surfaces the plugin's computational interface inside a pre-styled, high-contrast financial layout with zero configuration.
 
 ---
 
