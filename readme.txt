@@ -25,6 +25,11 @@ Key Features:
 * **100% Client-Side Privacy:** Zero server tracking, zero AJAX calls, and no cookies. Customer loan details never leave the browser.
 * **Academic Backing:** Developed by Md Golam Mubasshir Rafi in accordance with CFSBR (Centre for Fintech and Strategic Business Research) computational working papers and archived on CERN Zenodo.
 
+Official Documentation & Interactive Tools:
+* Live Portal & Visual Shortcode Builder: https://finengine.js.org/wordpress/
+* Academic Methodology & Working Paper: https://finengine.js.org/methodology/
+* Flagship Computational Framework: https://finengine.js.org/
+
 == Installation ==
 
 1. Upload the `finengine-calculator` folder to your `/wp-content/plugins/` directory, or install directly through the WordPress Plugins screen.

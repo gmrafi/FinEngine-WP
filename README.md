@@ -16,6 +16,8 @@
 [![Research](https://img.shields.io/badge/Research-CFSBR-0f766e.svg)](https://finengine.js.org/methodology/)
 [![DOI](https://img.shields.io/badge/DOI-10.67226%2Fcfsbr.fe.2026.001.v1-0284c7.svg)](https://doi.org/10.67226/cfsbr.fe.2026.001.v1)
 [![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.22769502-blue.svg)](https://doi.org/10.5281/zenodo.22769502)
+[![Official Portal](https://img.shields.io/badge/Portal-finengine.js.org%2Fwordpress-10b981.svg)](https://finengine.js.org/wordpress/)
+[![Shortcode Builder](https://img.shields.io/badge/Tools-Shortcode%20Builder-059669.svg)](https://finengine.js.org/wordpress/#shortcode-builder)
 [![Playground Demo](https://img.shields.io/badge/Live_Demo-WordPress_Playground-3858e9.svg?logo=wordpress&logoColor=white)](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/gmrafi/FinEngine-WP/main/blueprint.json)
 
 ---
@@ -52,6 +54,21 @@ FinEngine maintains identical mathematical parity between client-side JavaScript
 | [**finengine (Python)**](https://github.com/gmrafi/FinEngine-Py) | 0.1.1 | PyPI | Python actuarial math, Pandas DataFrames, and alternative credit risk AI. |
 | [**FinEngine-WP**](https://github.com/gmrafi/FinEngine-WP) | 1.0.0 | WP.org / GitHub | Deterministic reducing-balance Loan & EMI Calculator WordPress plugin. |
 
+### Live Interactive Ecosystem Hubs & Surfaces
+
+Explore the broader FinEngine computational platform:
+- **WordPress Integration Portal:** [https://finengine.js.org/wordpress/](https://finengine.js.org/wordpress/) (Interactive shortcode generator, Gutenberg block walkthrough, and compatibility matrix)
+- **Flagship Computational Platform:** [https://finengine.js.org/](https://finengine.js.org/) (Core deterministic financial primitives and live simulators)
+- **Student & Educator Lab (EN/BN):** [https://finengine.js.org/student/](https://finengine.js.org/student/) (Interactive loan decomposition and FinTech education)
+- **DSE Econometric Market Feed:** [https://finengine.js.org/dse/](https://finengine.js.org/dse/) (Dhaka Stock Exchange econometric feeds)
+- **Global Open-Source Finance Directory (500 Repos):** [https://finengine.js.org/repositories/](https://finengine.js.org/repositories/) (Curated quant, AI agents, and market data directory)
+- **Python SDK & Quant Hub:** [https://finengine.js.org/python/](https://finengine.js.org/python/) (Pandas DataFrame integration and PyPI quant library)
+- **AI Models & MCP Agent Lab:** [https://finengine.js.org/ai/](https://finengine.js.org/ai/) (Model Context Protocol server for Claude and Cursor)
+- **Simulation Lab:** [https://finengine.js.org/simulation/](https://finengine.js.org/simulation/) (SME working capital, student loan, and merchant scenarios)
+- **Methodology Working Paper:** [https://finengine.js.org/methodology/](https://finengine.js.org/methodology/) (Academic paper CFSBR-FE-2026-001)
+- **Core Monorepo:** [https://github.com/gmrafi/FinEngine](https://github.com/gmrafi/FinEngine)
+- **Python SDK Repository:** [https://github.com/gmrafi/FinEngine-Py](https://github.com/gmrafi/FinEngine-Py)
+
 ---
 
 ## Installation & Usage
@@ -63,11 +80,17 @@ Test FinEngine Calculator in a live, fully functional WordPress environment dire
 
 *Powered by WebAssembly (Wasm). Spins up an isolated WordPress instance and automatically opens a live demonstration page with the FinEngine Calculator pre-configured.*
 
-### 2. Gutenberg Block (Recommended)
+### 2. Interactive Shortcode Builder & Live Simulator
+Visit the official [FinEngine WordPress Portal](https://finengine.js.org/wordpress/) to test calculations live and visually configure shortcodes:
+
+- **[Interactive Shortcode Builder](https://finengine.js.org/wordpress/#shortcode-builder)**: Visually customize currency, principal, interest rate, tenure, accent colors, and locales.
+- **[Live Loan & EMI Calculator Simulator](https://finengine.js.org/wordpress/)**: Test real-time actuarial loan amortization with guaranteed terminal zero reconciliation ($B_n \equiv 0.00$).
+
+### 3. Gutenberg Block (Recommended)
 1. In the WordPress Block Editor, search for **"FinEngine Loan Calculator"**.
 2. Customize the default currency, principal, interest rate, and tenure directly from the sidebar settings panel.
 
-### 3. Universal Shortcode
+### 4. Universal Shortcode
 Add the shortcode anywhere in your content, widgets, or page builder:
 ```text
 [finengine_calculator currency="BDT" default_principal="500000" default_rate="12.0" default_tenure="36"]
