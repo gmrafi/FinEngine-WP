@@ -58,7 +58,6 @@ class FinEngine_Shortcode {
         $principal = floatval( $attributes['default_principal'] );
         $rate      = floatval( $attributes['default_rate'] );
         $tenure    = intval( $attributes['default_tenure'] );
-        $title     = esc_html( $attributes['title'] );
 
         ob_start();
         ?>
@@ -70,7 +69,7 @@ class FinEngine_Shortcode {
             
             <div class="fe-card">
                 <div class="fe-header">
-                    <h3 class="fe-title"><?php echo $title; ?></h3>
+                    <h3 class="fe-title"><?php echo esc_html( $attributes['title'] ); ?></h3>
                     <span class="fe-badge">
                         <span class="fe-badge-dot"></span>
                         <?php esc_html_e( 'Zero Float Drift · Actuarial Precision', 'finengine-calculator' ); ?>

@@ -55,12 +55,12 @@ export default function Edit({ attributes, setAttributes }) {
       </InspectorControls>
 
       <div className="finengine-editor-preview" style={{ padding: '1.5rem', background: '#f8fafc', borderRadius: '10px', border: '1px solid #e2e8f0' }}>
-        <h4 style={{ margin: '0 0 0.5rem 0', color: '#0f766e' }}>⚙️ {title} (Editor Preview)</h4>
+        <h4 style={{ margin: '0 0 0.5rem 0', color: '#0f766e' }}>{title} (Editor Preview)</h4>
         <p style={{ margin: 0, fontSize: '0.9rem', color: '#64748b' }}>
           <strong>Currency:</strong> {currency} | <strong>Principal:</strong> {defaultPrincipal.toLocaleString()} | <strong>Rate:</strong> {defaultRate}% | <strong>Tenure:</strong> {defaultTenure} Mo
         </p>
         <p style={{ margin: '0.5rem 0 0 0', fontSize: '0.82rem', color: '#059669' }}>
-          ✓ Verified reducing-balance actuarial amortization with guaranteed zero terminal drift.
+          [OK] Verified reducing-balance actuarial amortization with guaranteed zero terminal drift.
         </p>
       </div>
     </div>
