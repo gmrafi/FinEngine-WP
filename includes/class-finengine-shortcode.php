@@ -98,7 +98,7 @@ class FinEngine_Shortcode {
         ob_start();
         ?>
         <div class="finengine-calculator-wrapper theme-<?php echo esc_attr( $attributes['theme'] ); ?>" 
-             data-currency="<?php echo $currency; ?>"
+             data-currency="<?php echo esc_attr( $currency ); ?>"
              data-principal="<?php echo esc_attr( $principal ); ?>"
              data-rate="<?php echo esc_attr( $rate ); ?>"
              data-tenure="<?php echo esc_attr( $tenure ); ?>">
