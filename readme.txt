@@ -8,7 +8,7 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Verified reducing-balance EMI loan calculator powered by FinEngine. Zero float-drift and native BDT/South Asian lakh-crore precision. Developed by Md Golam Mubasshir Rafi at the Centre for Fintech and Strategic Business Research (CFSBR).
+Deterministic reducing-balance EMI loan calculator powered by FinEngine. Eliminates float drift with native BDT Lakh/Crore precision.
 
 == Description ==
 
@@ -52,6 +52,16 @@ Go to **Settings > FinEngine Calculator** in your WordPress admin dashboard, or 
 
 1. Modern, responsive EMI loan calculator with interactive sliders and KPI summary.
 2. Gutenberg block settings with custom currency and preset selectors.
+
+== Source Code and Build ==
+
+The uncompiled, human-readable source code for all bundled JavaScript and CSS assets (including build/index.js) is publicly maintained at:
+https://github.com/gmrafi/FinEngine-WP
+
+To build the production bundle from source:
+1. Clone repository: git clone https://github.com/gmrafi/FinEngine-WP.git
+2. Install dependencies: npm install
+3. Compile production bundle: npm run build
 
 == Changelog ==
 

@@ -27,14 +27,8 @@ require_once FINENGINE_PATH . 'includes/class-finengine-shortcode.php';
 require_once FINENGINE_PATH . 'includes/class-finengine-block.php';
 require_once FINENGINE_PATH . 'includes/class-finengine-settings.php';
 
-// Initialize text domain and plugin components
+// Initialize plugin components
 add_action( 'plugins_loaded', function() {
-    load_plugin_textdomain(
-        'finengine-calculator',
-        false,
-        dirname( plugin_basename( __FILE__ ) ) . '/languages'
-    );
-
     new FinEngine_Shortcode();
     new FinEngine_Block();
     new FinEngine_Settings();
