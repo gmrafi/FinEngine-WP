@@ -49,18 +49,63 @@ export function initFinEngineCalculators() {
     }
 
     if (principalInput && principalRange) {
-      principalInput.addEventListener('input', () => syncAndRecalc(principalInput, principalRange));
-      principalRange.addEventListener('input', () => syncAndRecalc(principalRange, principalInput));
+      const syncFromInput = () => {
+        const val = parseFloat(principalInput.value) || 0;
+        if (val > parseFloat(principalRange.max)) {
+          principalRange.max = val;
+        }
+        principalRange.value = val;
+        recalculate();
+      };
+      const syncFromRange = () => {
+        principalInput.value = principalRange.value;
+        recalculate();
+      };
+
+      principalInput.addEventListener('input', syncFromInput);
+      principalInput.addEventListener('change', syncFromInput);
+      principalRange.addEventListener('input', syncFromRange);
+      principalRange.addEventListener('change', syncFromRange);
     }
 
     if (rateInput && rateRange) {
-      rateInput.addEventListener('input', () => syncAndRecalc(rateInput, rateRange));
-      rateRange.addEventListener('input', () => syncAndRecalc(rateRange, rateInput));
+      const syncFromInput = () => {
+        const val = parseFloat(rateInput.value) || 0;
+        if (val > parseFloat(rateRange.max)) {
+          rateRange.max = val;
+        }
+        rateRange.value = val;
+        recalculate();
+      };
+      const syncFromRange = () => {
+        rateInput.value = rateRange.value;
+        recalculate();
+      };
+
+      rateInput.addEventListener('input', syncFromInput);
+      rateInput.addEventListener('change', syncFromInput);
+      rateRange.addEventListener('input', syncFromRange);
+      rateRange.addEventListener('change', syncFromRange);
     }
 
     if (tenureInput && tenureRange) {
-      tenureInput.addEventListener('input', () => syncAndRecalc(tenureInput, tenureRange));
-      tenureRange.addEventListener('input', () => syncAndRecalc(tenureRange, tenureInput));
+      const syncFromInput = () => {
+        const val = parseInt(tenureInput.value, 10) || 1;
+        if (val > parseInt(tenureRange.max, 10)) {
+          tenureRange.max = val;
+        }
+        tenureRange.value = val;
+        recalculate();
+      };
+      const syncFromRange = () => {
+        tenureInput.value = tenureRange.value;
+        recalculate();
+      };
+
+      tenureInput.addEventListener('input', syncFromInput);
+      tenureInput.addEventListener('change', syncFromInput);
+      tenureRange.addEventListener('input', syncFromRange);
+      tenureRange.addEventListener('change', syncFromRange);
     }
 
     // Run initial calculation

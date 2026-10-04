@@ -20,7 +20,7 @@ class FinEngine_Block {
     }
 
     public function render_block( $attributes, $content ) {
-        $shortcode = new FinEngine_Shortcode();
+        $shortcode = FinEngine_Shortcode::get_instance();
         return $shortcode->render_shortcode( [
             'currency'          => $attributes['currency'] ?? 'BDT',
             'default_principal' => $attributes['defaultPrincipal'] ?? '500000',
