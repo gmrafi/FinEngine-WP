@@ -25,3 +25,21 @@ FinEngine Fintech is distributed under the terms of the GNU GPL v2 or later.
   --fe-surface: #f8fafc;
   --fe-border: #e2e8f0;
 }
+
+/* Accessibility: Ensure skip-link is visibly positioned on focus */
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: 0;
+  background: var(--fe-primary);
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+  z-index: 999999;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 0 0 6px 0;
+}
+
+.skip-link:focus {
+  top: 0;
+}
