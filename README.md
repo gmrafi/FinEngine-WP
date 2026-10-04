@@ -2,16 +2,17 @@
   <img src="logo-mark.svg" alt="FinEngine Logo" width="120" height="120" />
 </p>
 
-# FinEngine Calculator
+# FinEngine WordPress Ecosystem
 
-### Deterministic Loan & EMI Calculator for WordPress
+### Deterministic Financial Architecture: Plugin & Full-Site Editing Theme
 
-> **Verified reducing-balance EMI loan calculator powered by FinEngine.**  
-> Eliminates IEEE-754 floating-point drift and brings native South Asian Lakh/Crore numbering (Bangladeshi Taka · Poisha) directly into WordPress.
+> **Official WordPress suite for deterministic actuarial loan computation and modern fintech web architecture.**  
+> Eliminates IEEE-754 floating-point drift, introduces native South Asian Lakh/Crore numbering (Bangladeshi Taka · Poisha), and provides an engineered Full-Site Editing (FSE) block theme.
 
 [![License: GPL v2+](https://img.shields.io/badge/License-GPL%20v2%2B-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
 [![WordPress Compatibility](https://img.shields.io/badge/WordPress-6.0%2B-21759b.svg?logo=wordpress&logoColor=white)](https://wordpress.org/)
 [![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-777bb4.svg?logo=php&logoColor=white)](https://www.php.net/)
+[![Theme Trac](https://img.shields.io/badge/Theme_Trac-%23293749-0f766e.svg)](https://themes.trac.wordpress.org/ticket/293749)
 [![Zero Float Drift](https://img.shields.io/badge/Precision-Zero%20Drift%20(B_n%20%3D%3D%3D%200.00)-059669.svg)](https://finengine.js.org/)
 [![Research](https://img.shields.io/badge/Research-CFSBR-0f766e.svg)](https://finengine.js.org/methodology/)
 [![DOI](https://img.shields.io/badge/DOI-10.67226%2Fcfsbr.fe.2026.001.v1-0284c7.svg)](https://doi.org/10.67226/cfsbr.fe.2026.001.v1)
@@ -22,7 +23,32 @@
 
 ---
 
-## Why FinEngine for WordPress?
+## The Dual Ecosystem Architecture
+
+The **FinEngine-WP** ecosystem provides two interconnected solutions for banks, microfinance institutions, fintech startups, and research organizations:
+
+```
+                  ┌──────────────────────────────────────────────┐
+                  │          FinEngine WordPress Suite           │
+                  └──────────────────────┬───────────────────────┘
+                                         │
+                 ┌───────────────────────┴───────────────────────┐
+                 ▼                                               ▼
+  ┌─────────────────────────────┐                 ┌─────────────────────────────┐
+  │     FinEngine Calculator    │                 │      FinEngine Fintech      │
+  │      (WordPress Plugin)     │                 │       (WordPress Theme)     │
+  ├─────────────────────────────┤                 ├─────────────────────────────┤
+  │ • Actuarial reducing balance│                 │ • Full-Site Editing (FSE)   │
+  │ • Integer Poisha arithmetic │                 │ • theme.json v3 token system│
+  │ • Terminal zero ($B_n=0.00$)│                 │ • Financial block patterns  │
+  │ • Lakh/Crore grouping       │                 │ • Native Elementor support  │
+  │ • Gutenberg Block & Shortcode│                │ • 100% Client-side speed    │
+  └─────────────────────────────┘                 └─────────────────────────────┘
+```
+
+---
+
+## 1. FinEngine Calculator (Plugin)
 
 Modern web financial applications increasingly offload real-time calculations to client-side runtimes. However, standard ECMAScript engines rely on IEEE-754 double-precision binary floating-point arithmetic (binary64), introducing representation drift in everyday decimal arithmetic:
 
@@ -32,13 +58,29 @@ Modern web financial applications increasingly offload real-time calculations to
 
 In multi-year financial loan amortization schedules, this drift compounds across monthly periods, causing final closing balances to fail to liquidate cleanly to zero ($B_n \neq 0.00$). Furthermore, existing WordPress calculators lack native South Asian Lakh and Crore numbering conventions (`2,45,87,500.00`).
 
-**FinEngine Calculator** resolves this by delivering:
+### Core Plugin Capabilities:
 1. **Zero Float Drift Guarantee:** Actuarial reducing-balance calculations with strict integer sub-unit Poisha scaling (1 BDT = 100 Poisha).
 2. **Terminal Reconciliation Rule:** Boundary enforcement guaranteeing closing balance liquidates identically to zero ($B_n \equiv 0.00$).
 3. **South Asian Numbering Conventions:** Built-in Lakh and Crore grouping for Bangladeshi Taka (BDT) and Indian Rupee (INR).
 4. **Full-Site Editing (Gutenberg) Block:** Native WordPress block with live Inspector Controls.
 5. **Universal Shortcode:** One-line drop-in `[finengine_calculator]` compatible with Elementor, Divi, Beaver Builder, and Classic Editor.
-6. **100% Client-Side Privacy:** Zero server tracking, zero AJAX calls, and no cookies. Customer financial numbers never leave the user's browser.
+6. **100% Client-Side Privacy:** Zero server tracking, zero AJAX calls, and no cookies. Customer financial data never leaves the user's browser.
+
+---
+
+## 2. FinEngine Fintech (Theme)
+
+**FinEngine Fintech** is a purpose-built Full-Site Editing (FSE) block theme designed to provide modern financial institutions with clean, high-performance web interfaces.
+
+### Core Theme Capabilities:
+1. **Full-Site Editing Architecture:** Full control over global styles, color palettes, headers, and footers using `theme.json` v3.
+2. **Pre-Built Financial Block Patterns:**
+   - `finengine-fintech/hero-finance`: High-impact landing page hero section with statistics.
+   - `finengine-fintech/kpi-grid`: 3-column financial accuracy KPI metrics display.
+   - `finengine-fintech/calculator-section`: Ready-to-use live loan calculation container.
+3. **Elementor Page Builder Compatibility:** Custom full-width canvas template (`page-elementor-fullwidth.html`) for drag-and-drop page creation.
+4. **Zero-Bloat Performance:** Native system font stacks, zero external CDN requests, and ultra-clean semantic HTML5 markup.
+5. **Accessible Design Tokens:** Emerald (`#0f766e`), Slate Navy (`#0f172a`), and Cyan (`#0ea5e9`) meeting WCAG AAA contrast standards.
 
 ---
 
@@ -52,7 +94,8 @@ FinEngine maintains identical mathematical parity between client-side JavaScript
 | [**@finengine/math**](https://github.com/gmrafi/FinEngine/blob/main/packages/math) | 0.3.0 | npm | Actuarial reducing-balance loan amortization, EMI schedules, XIRR solver. |
 | [**@finengine/ui**](https://github.com/gmrafi/FinEngine/blob/main/packages/ui) | 0.3.0 | npm | Accessible view-models for repayment summaries and burden gauges. |
 | [**finengine (Python)**](https://github.com/gmrafi/FinEngine-Py) | 0.1.1 | PyPI | Python actuarial math, Pandas DataFrames, and alternative credit risk AI. |
-| [**FinEngine-WP**](https://github.com/gmrafi/FinEngine-WP) | 1.0.0 | WP.org / GitHub | Deterministic reducing-balance Loan & EMI Calculator WordPress plugin. |
+| [**finengine-calculator**](https://github.com/gmrafi/FinEngine-WP) | 1.0.0 | WP.org / GitHub | Deterministic reducing-balance Loan & EMI Calculator WordPress plugin. |
+| [**finengine-fintech**](https://themes.trac.wordpress.org/ticket/293749) | 1.0.0 | WP.org / GitHub | Full-Site Editing (FSE) block theme for fintech and banking portals. |
 
 ### Live Interactive Ecosystem Hubs & Surfaces
 
@@ -74,42 +117,39 @@ Explore the broader FinEngine computational platform:
 ## Installation & Usage
 
 ### 1. Instant 1-Click Demo (WordPress Playground)
-Test FinEngine Calculator in a live, fully functional WordPress environment directly inside your web browser without installing any software:
+Test the entire FinEngine ecosystem in a live WordPress environment directly inside your web browser without installing any software:
 
 - **[Launch Live WordPress Playground Demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/gmrafi/FinEngine-WP/main/blueprint.json)**
 
-*Powered by WebAssembly (Wasm). Spins up an isolated WordPress instance and automatically opens a live demonstration page with the FinEngine Calculator pre-configured.*
+*Spins up an isolated WebAssembly (Wasm) WordPress instance with both the plugin and theme pre-configured.*
 
-### 2. Interactive Shortcode Builder & Live Simulator
-Visit the official [FinEngine WordPress Portal](https://finengine.js.org/wordpress/) to test calculations live and visually configure shortcodes:
-
-- **[Interactive Shortcode Builder](https://finengine.js.org/wordpress/#shortcode-builder)**: Visually customize currency, principal, interest rate, tenure, accent colors, and locales.
-- **[Live Loan & EMI Calculator Simulator](https://finengine.js.org/wordpress/)**: Test real-time actuarial loan amortization with guaranteed terminal zero reconciliation ($B_n \equiv 0.00$).
-
-### 3. Gutenberg Block (Recommended)
-1. In the WordPress Block Editor, search for **"FinEngine Loan Calculator"**.
-2. Customize the default currency, principal, interest rate, and tenure directly from the sidebar settings panel.
-
-### 4. Universal Shortcode
-Add the shortcode anywhere in your content, widgets, or page builder:
-```text
-[finengine_calculator currency="BDT" default_principal="500000" default_rate="12.0" default_tenure="36"]
-```
+### 2. Plugin Setup (`finengine-calculator`)
+1. Download `finengine-calculator.zip` or install via WordPress Plugin Directory.
+2. In WordPress admin, navigate to **Plugins > Add New > Upload Plugin**.
+3. Activate the plugin.
+4. Add the block via Block Editor (**FinEngine Loan Calculator**) or embed via shortcode:
+   ```text
+   [finengine_calculator currency="BDT" default_principal="500000" default_rate="12.0" default_tenure="36"]
+   ```
 
 #### Shortcode Parameters:
 | Attribute | Default | Description |
 | :--- | :--- | :--- |
 | `currency` | `BDT` | Currency code (`BDT`, `INR`, `USD`, `EUR`, `GBP`) |
-| `default_principal` | `500000` | Initial loan amount |
+| `default_principal` | `500000` | Initial loan principal amount |
 | `default_rate` | `12.0` | Annual interest rate (percentage) |
 | `default_tenure` | `36` | Loan tenure in months |
 | `theme` | `light` | Visual theme (`light`) |
 
+### 3. Theme Setup (`finengine-fintech`)
+1. Download `finengine-fintech.zip` or install via WordPress Theme Directory.
+2. In WordPress admin, navigate to **Appearance > Themes > Add New > Upload Theme**.
+3. Activate **FinEngine Fintech**.
+4. Customize templates and global styles via **Appearance > Editor** (Site Editor).
+
 ---
 
 ## Development & Build Pipeline
-
-This plugin uses the official WordPress build toolchain `@wordpress/scripts`:
 
 ```bash
 # Clone the repository
@@ -160,7 +200,7 @@ FinEngine is published as an open computational methodology standard by the **Ce
 
 ## Institutional Governance, Authors & Maintenance
 
-FinEngine Calculator is developed as an open computational research initiative under the institutional governance of the **Centre for Fintech and Strategic Business Research (CFSBR)**. Conceived and architected to eliminate IEEE-754 binary floating-point drift in client-side financial environments, the framework provides verifiable actuarial amortization schedules alongside native South Asian currency numbering standards.
+FinEngine WordPress Ecosystem is developed as an open computational research initiative under the institutional governance of the **Centre for Fintech and Strategic Business Research (CFSBR)**. Conceived and architected to eliminate IEEE-754 binary floating-point drift in client-side financial environments, the framework provides verifiable actuarial amortization schedules alongside native South Asian currency numbering standards.
 
 ### Authorship & Leadership
 
@@ -169,6 +209,7 @@ FinEngine Calculator is developed as an open computational research initiative u
 - **WordPress Profile:** [https://profiles.wordpress.org/gmrafi](https://profiles.wordpress.org/gmrafi/)
 - **Personal Website:** [https://gmrafi.com.bd](https://gmrafi.com.bd/)
 - **GitHub Repository:** [https://github.com/gmrafi/FinEngine-WP](https://github.com/gmrafi/FinEngine-WP)
+- **Theme Trac Ticket:** [https://themes.trac.wordpress.org/ticket/293749](https://themes.trac.wordpress.org/ticket/293749)
 - **Official Contact:** [rafi@gmrafi.com.bd](mailto:rafi@gmrafi.com.bd)
 
 The codebase is collaboratively maintained under CFSBR stewardship alongside the international WordPress developer community.
@@ -179,3 +220,4 @@ The codebase is collaboratively maintained under CFSBR stewardship alongside the
 
 - **Software Code:** Licensed under the [GNU General Public License v2.0 or later (GPL-2.0-or-later)](LICENSE) in full compliance with WordPress.org guidelines.
 - **Documentation & Research Methodology:** [Creative Commons Attribution 4.0 International (CC-BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
