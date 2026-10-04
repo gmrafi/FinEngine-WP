@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1544 500" width="100%" height="100%" shape-rendering="crispEdges">
+  <rect width="1544" height="500" fill="#FFFFFF"/>
+  <rect width="1544" height="500" fill="#F8FAFC" opacity="0.85"/>
+  
+  <!-- Architectural Subtle Grid Lines -->
+  <g opacity="0.25" stroke="#94A3B8" stroke-width="1.5">
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="800" y1="0" x2="800" y2="500"/>
+    <line x1="1000" y1="0" x2="1000" y2="500"/>
+    <line x1="1200" y1="0" x2="1200" y2="500"/>
+    <line x1="1400" y1="0" x2="1400" y2="500"/>
+    <line x1="0" y1="125" x2="1544" y2="125"/>
+    <line x1="0" y1="250" x2="1544" y2="250"/>
+    <line x1="0" y1="375" x2="1544" y2="375"/>
+  </g>
+
+  <!-- Left Accent Vertical Edge -->
+  <rect x="0" y="0" width="14" height="500" fill="#165B44"/>
+  <rect x="14" y="0" width="8" height="500" fill="#1D4ED8"/>
+
+  <!-- 4-Tile Pure Icon Container -->
+  <g transform="translate(100, 95)">
+    <rect width="310" height="310" rx="14" fill="#FFFFFF" stroke="#0F172A" stroke-width="8"/>
+    <g transform="translate(40, 40)">
+      <!-- Top-Left (+) -->
+      <rect x="0" y="0" width="108" height="108" rx="6" fill="#1D4ED8"/>
+      <rect x="46" y="22" width="16" height="64" fill="#FFFFFF"/>
+      <rect x="22" y="46" width="64" height="16" fill="#FFFFFF"/>
+
+      <!-- Top-Right (%) -->
+      <rect x="122" y="0" width="108" height="108" rx="6" fill="#165B44"/>
+      <circle cx="150" cy="30" r="11" fill="#FFFFFF"/>
+      <polygon points="138,84 149,84 204,24 193,24" fill="#FFFFFF"/>
+      <circle cx="202" cy="78" r="11" fill="#FFFFFF"/>
+
+      <!-- Bottom-Left (÷) -->
+      <rect x="0" y="122" width="108" height="108" rx="6" fill="#0F172A"/>
+      <circle cx="54" cy="149" r="11" fill="#FFFFFF"/>
+      <rect x="22" y="168" width="64" height="16" fill="#FFFFFF"/>
+      <circle cx="54" cy="203" r="11" fill="#FFFFFF"/>
+
+      <!-- Bottom-Right (=) -->
+      <rect x="122" y="122" width="108" height="108" rx="6" fill="#165B44"/>
+      <rect x="144" y="160" width="64" height="14" fill="#FFFFFF"/>
+      <rect x="144" y="182" width="64" height="14" fill="#FFFFFF"/>
+    </g>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(460, 125)">
+    <!-- CFSBR Badge on Banner ONLY (Where it belongs) -->
+    <rect width="470" height="36" rx="4" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5"/>
+    <rect x="14" y="12" width="12" height="12" rx="2" fill="#1D4ED8"/>
+    <rect x="30" y="12" width="12" height="12" rx="2" fill="#165B44"/>
+    <text x="52" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="12.5" fill="#0F172A" letter-spacing="1">CENTRE FOR FINTECH &amp; STRATEGIC BUSINESS RESEARCH</text>
+
+    <!-- Title -->
+    <text x="0" y="112" font-family="'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="64" fill="#0F172A" letter-spacing="-1.5">
+      Fin<tspan fill="#165B44">Engine</tspan> <tspan font-weight="400" fill="#64748B">Calculator</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="168" font-family="'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="23" fill="#64748B">
+      Quantitative Formula Matrix • Capital Budgeting • TVM &amp; Valuation Suite
+    </text>
+
+    <!-- Feature Badges -->
+    <g transform="translate(0, 210)">
+      <g transform="translate(0, 0)">
+        <rect width="165" height="44" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+        <text x="82" y="27" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="15" fill="#165B44" text-anchor="middle">NPV &amp; IRR Suite</text>
+      </g>
+      <g transform="translate(180, 0)">
+        <rect width="200" height="44" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+        <text x="100" y="27" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="15" fill="#1D4ED8" text-anchor="middle">TVM &amp; Amortization</text>
+      </g>
+      <g transform="translate(395, 0)">
+        <rect width="200" height="44" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+        <text x="100" y="27" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="15" fill="#0F172A" text-anchor="middle">WACC &amp; Valuation</text>
+      </g>
+      <g transform="translate(610, 0)">
+        <rect width="215" height="44" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/>
+        <text x="107" y="27" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="15" fill="#475569" text-anchor="middle">FSE Block Theme Sync</text>
+      </g>
+    </g>
+  </g>
+</svg>
