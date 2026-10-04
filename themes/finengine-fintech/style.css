@@ -43,3 +43,13 @@ FinEngine Fintech is distributed under the terms of the GNU GPL v2 or later.
 .skip-link:focus {
   top: 0;
 }
+
+/* Smooth Focus States for Keyboard Navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--fe-primary);
+  outline-offset: 2px;
+}
