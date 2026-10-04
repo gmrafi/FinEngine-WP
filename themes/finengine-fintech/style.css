@@ -15,3 +15,13 @@ Tags: full-site-editing, custom-colors, custom-menu, custom-logo, editor-style, 
 
 FinEngine Fintech is distributed under the terms of the GNU GPL v2 or later.
 */
+
+/* Reset & Helper Utilities */
+:root {
+  --fe-primary: #0f766e;
+  --fe-primary-dark: #115e59;
+  --fe-accent: #0ea5e9;
+  --fe-dark: #0f172a;
+  --fe-surface: #f8fafc;
+  --fe-border: #e2e8f0;
+}
