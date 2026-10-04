@@ -212,19 +212,23 @@ FinEngine is published as an open computational methodology standard by the **Ce
 
 ## Institutional Governance, Authors & Maintenance
 
-FinEngine WordPress Ecosystem is developed as an open computational research initiative under the institutional governance of the **Centre for Fintech and Strategic Business Research (CFSBR)**. Conceived and architected to eliminate IEEE-754 binary floating-point drift in client-side financial environments, the framework provides verifiable actuarial amortization schedules alongside native South Asian currency numbering standards.
+The **FinEngine WordPress Ecosystem** is developed as an open computational research initiative under the institutional governance of the **Centre for Fintech and Strategic Business Research (CFSBR)**. Conceived and architected by Md Golam Mubasshir Rafi, the ecosystem integrates two core open-source WordPress solutions:
+
+1. **FinEngine Calculator (Plugin):** Deterministic reducing-balance loan computation engine, BDT integer sub-unit (Poisha) arithmetic, IEEE-754 floating-point correction, and native South Asian Lakh/Crore formatting.
+2. **FinEngine Fintech (Theme):** Modern Full-Site Editing (FSE) block theme featuring `theme.json` v3 design tokens, pre-built financial block patterns (`hero-finance`, `kpi-grid`, `calculator-section`), and native Elementor page builder compatibility.
 
 ### Authorship & Leadership
 
 - **Author & Architect:** [Md Golam Mubasshir Rafi](https://gmrafi.com.bd/)
 - **Institutional Governance:** [Centre for Fintech and Strategic Business Research (CFSBR)](https://finengine.js.org/)
+- **WordPress Plugin:** [FinEngine Calculator (`finengine-calculator`)](https://github.com/gmrafi/FinEngine-WP)
+- **WordPress Theme:** [FinEngine Fintech (`finengine-fintech`)](https://themes.trac.wordpress.org/ticket/293749)
 - **WordPress Profile:** [https://profiles.wordpress.org/gmrafi](https://profiles.wordpress.org/gmrafi/)
 - **Personal Website:** [https://gmrafi.com.bd](https://gmrafi.com.bd/)
 - **GitHub Repository:** [https://github.com/gmrafi/FinEngine-WP](https://github.com/gmrafi/FinEngine-WP)
-- **Theme Trac Ticket:** [https://themes.trac.wordpress.org/ticket/293749](https://themes.trac.wordpress.org/ticket/293749)
 - **Official Contact:** [rafi@gmrafi.com.bd](mailto:rafi@gmrafi.com.bd)
 
-The codebase is collaboratively maintained under CFSBR stewardship alongside the international WordPress developer community.
+The ecosystem is collaboratively maintained under CFSBR stewardship alongside the international WordPress developer community.
 
 ---
 
@@ -232,4 +236,5 @@ The codebase is collaboratively maintained under CFSBR stewardship alongside the
 
 - **Software Code:** Licensed under the [GNU General Public License v2.0 or later (GPL-2.0-or-later)](LICENSE) in full compliance with WordPress.org guidelines.
 - **Documentation & Research Methodology:** [Creative Commons Attribution 4.0 International (CC-BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
 
