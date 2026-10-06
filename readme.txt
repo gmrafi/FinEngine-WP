@@ -26,6 +26,7 @@ Key Features:
 * **Academic Backing:** Developed by Md Golam Mubasshir Rafi in accordance with CFSBR (Centre for Fintech and Strategic Business Research) computational working papers and archived on CERN Zenodo.
 
 Official Documentation & Interactive Tools:
+* Official WordPress.org Plugin: https://wordpress.org/plugins/finengine-calculator/
 * Live Portal & Visual Shortcode Builder: https://finengine.js.org/wordpress/
 * Academic Methodology & Working Paper: https://finengine.js.org/methodology/
 * Flagship Computational Framework: https://finengine.js.org/

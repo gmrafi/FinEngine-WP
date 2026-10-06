@@ -10,6 +10,7 @@
 > Eliminates IEEE-754 floating-point drift, introduces native South Asian Lakh/Crore numbering (Bangladeshi Taka · Poisha), and provides an engineered Full-Site Editing (FSE) block theme.
 
 [![License: GPL v2+](https://img.shields.io/badge/License-GPL%20v2%2B-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
+[![WordPress.org Plugin](https://img.shields.io/badge/WordPress.org-finengine--calculator-21759b.svg?logo=wordpress&logoColor=white)](https://wordpress.org/plugins/finengine-calculator/)
 [![WordPress Compatibility](https://img.shields.io/badge/WordPress-6.0%2B-21759b.svg?logo=wordpress&logoColor=white)](https://wordpress.org/)
 [![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-777bb4.svg?logo=php&logoColor=white)](https://www.php.net/)
 [![Theme Trac](https://img.shields.io/badge/Theme_Trac-%23293749-0f766e.svg)](https://themes.trac.wordpress.org/ticket/293749)
@@ -106,7 +107,7 @@ FinEngine maintains identical mathematical parity between client-side JavaScript
 | [**@finengine/math**](https://github.com/gmrafi/FinEngine/blob/main/packages/math) | 0.3.0 | npm | Actuarial reducing-balance loan amortization, EMI schedules, XIRR solver. |
 | [**@finengine/ui**](https://github.com/gmrafi/FinEngine/blob/main/packages/ui) | 0.3.0 | npm | Accessible view-models for repayment summaries and burden gauges. |
 | [**finengine (Python)**](https://github.com/gmrafi/FinEngine-Py) | 0.1.1 | PyPI | Python actuarial math, Pandas DataFrames, and alternative credit risk AI. |
-| [**finengine-calculator**](https://github.com/gmrafi/FinEngine-WP) | 1.0.0 | WP.org / GitHub | Deterministic reducing-balance Loan & EMI Calculator WordPress plugin. |
+| [**finengine-calculator**](https://wordpress.org/plugins/finengine-calculator/) | 1.0.0 | [WordPress.org](https://wordpress.org/plugins/finengine-calculator/) / [GitHub](https://github.com/gmrafi/FinEngine-WP) | Deterministic reducing-balance Loan & EMI Calculator WordPress plugin. |
 | [**finengine-fintech**](https://themes.trac.wordpress.org/ticket/293749) | 1.0.0 | WP.org / GitHub | Full-Site Editing (FSE) block theme for fintech and banking portals. |
 
 ### Live Interactive Ecosystem Hubs & Surfaces
@@ -221,7 +222,7 @@ The **FinEngine WordPress Ecosystem** is developed as an open computational rese
 
 - **Author & Architect:** [Md Golam Mubasshir Rafi](https://gmrafi.com.bd/)
 - **Institutional Governance:** [Centre for Fintech and Strategic Business Research (CFSBR)](https://finengine.js.org/)
-- **WordPress Plugin:** [FinEngine Calculator (`finengine-calculator`)](https://github.com/gmrafi/FinEngine-WP)
+- **WordPress Plugin:** [FinEngine Calculator (`finengine-calculator`)](https://wordpress.org/plugins/finengine-calculator/)
 - **WordPress Theme:** [FinEngine Fintech (`finengine-fintech`)](https://themes.trac.wordpress.org/ticket/293749)
 - **WordPress Profile:** [https://profiles.wordpress.org/gmrafi](https://profiles.wordpress.org/gmrafi/)
 - **Personal Website:** [https://gmrafi.com.bd](https://gmrafi.com.bd/)
